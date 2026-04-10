@@ -4,6 +4,8 @@
 
 A modern, high-performance portfolio website built with pure HTML, CSS, and JavaScript. Showcases expertise in web infrastructure, IT processes, automation, and security.
 
+![Portfolio Preview](./images/og-image.jpg)
+
 ## ✨ Features
 
 - **Glassmorphism UI**: Modern frosted glass navigation with backdrop blur
