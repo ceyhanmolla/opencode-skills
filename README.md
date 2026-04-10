@@ -39,7 +39,9 @@ A modern, high-performance portfolio website built with pure HTML, CSS, and Java
 ## 📂 Project Structure
 
 ```
-├── index.html              # Single-page application (no build step)
+├── index.html              # HTML structure and markup
+├── style.css               # All styles and animations
+├── main.js                 # JavaScript modules and interactions
 ├── manifest.json           # PWA manifest for installability
 ├── CNAME                  # Custom domain configuration
 ├── .gitignore             # Git ignore rules
