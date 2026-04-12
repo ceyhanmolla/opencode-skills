@@ -1,155 +1,90 @@
-# Ceyhan Molla Portfolio
+# opencode-skills
 
-**Web Infrastructure & IT Process Specialist with 20+ years of experience**
+A collection of custom OpenCode skills for advanced development workflows.
 
-A modern, high-performance portfolio website built with pure HTML, CSS, and JavaScript. Showcases expertise in web infrastructure, IT processes, automation, and security.
+This repository serves as documentation for a set of powerful OpenCode skills that enhance the AI coding assistant's capabilities. These skills provide specialized guidance for frontend design, security auditing, and web page development.
 
-![Portfolio Preview](./images/og-image.jpg)
+## Skills Overview
 
-## ✨ Features
+### 1. Design Taste Frontend
 
-- **Glassmorphism UI**: Modern frosted glass navigation with backdrop blur
-- **Fully Responsive**: Mobile-first design with fluid typography and adaptive layouts
-- **Parallax Scrolling**: Immsersive scroll experience with dynamic parallax effects on statistics
-- **Animated Statistics**: Counter animations triggered by intersection observer
-- **Interactive Skills Section**: Accordion UI with smooth expand/collapse animations
-- **Progressive Web App (PWA)**: Web App Manifest, multiple favicon sizes, offline-capable
-- **Accessibility Compliant**: ARIA labels, keyboard navigation, skip links, focus management
-- **Performance Optimized**: Preloaded critical assets, lazy loading, minimal render-blocking
-- **SEO Optimized**: Comprehensive meta tags, Open Graph, Twitter Cards, JSON-LD structured data
-- **Custom Domain Ready**: Configured for `www.ceyhanmolla.com` via CNAME
+**Skill name:** `design-taste-frontend`
 
-## 🛠️ Tech Stack
+**Description:** Senior UI/UX Engineer. Architect digital interfaces overriding default LLM biases. Enforces metric-based rules, strict component architecture, CSS hardware acceleration, and balanced design engineering.
 
-- **HTML5**: Semantic markup with accessibility in mind
-- **CSS3**: Custom properties (CSS variables), flexbox, grid, animations, backdrop-filter
-- **Vanilla JavaScript**: No frameworks, pure ES6+ with modular architecture
-- **Canvas API**: Dynamic particle connections in the stats section
-- **PWA Standards**: Web App Manifest, responsive icons
+**Key Capabilities:**
+- Configurable design dials (DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY)
+- Deterministic typography with premium font stacks (Geist, Outfit, Cabinet Grotesk, Satoshi)
+- Color calibration limiting to 1 accent color (<80% saturation)
+- Advanced motion patterns (magnetic buttons, staggering, layout transitions)
+- Perpetual micro-interactions using Framer Motion
+- Liquid Glass refraction effect for premium UI
+- Bento 2.0 architecture with 5 specific card archetypes
+- Strict performance guardrails (hardware acceleration, z-index restraint)
+- Anti-slop patterns to avoid generic AI designs
 
-## 🎨 Design Highlights
-
-- **Color Scheme**: Brand red (#E62020) on deep black (#0A0A0A)
-- **Typography**: Lexend font family for excellent readability
-- **Micro-interactions**: Hover states, focus rings, smooth transitions
-- **Scroll Progress Bar**: Visual indicator at the top of the page
-- **Grain Overlay**: Subtle texture for tactile feel
-- **Dark Mode**: Optimized for dark theme by default
-
-## 📂 Project Structure
-
-```
-├── index.html              # HTML structure and markup
-├── style.css               # All styles and animations
-├── main.js                 # JavaScript modules and interactions
-├── manifest.json           # PWA manifest for installability
-├── CNAME                  # Custom domain configuration
-├── .gitignore             # Git ignore rules
-├── README.md              # This file
-└── images/                # Optimized assets
-    ├── hero.webp          # Hero background (WebP format, preloaded)
-    ├── 01.webp            # Skill section backgrounds
-    ├── 02.webp
-    ├── 03.webp
-    ├── logo.svg           # Vector logo (scales perfectly)
-    ├── favicon.ico        # Legacy browser favicon
-    ├── favicon-16x16.png  # Standard favicon sizes
-    ├── favicon-32x32.png
-    ├── apple-touch-icon.png    # iOS/Apple devices (180x180)
-    ├── android-chrome-192x192.png  # Android Chrome (192x192)
-    └── android-chrome-512x512.png  # Android Chrome (512x512)
-```
-
-## 🚀 Deployment
-
-### GitHub Pages (Default)
-
-No build step required! This is a pure static site.
-
-```bash
-# Clone the repository
-git clone https://github.com/ceyhanmolla/ceyhanmolla.com.git
-cd ceyhanmolla.com
-
-# Make changes and push
-git add .
-git commit -m "Update content"
-git push origin main
-```
-
-GitHub Pages will automatically deploy from the `main` branch root.  
-**Live URL**: `https://ceyhanmolla.github.io/ceyhanmolla.com`
-
-### Custom Domain (www.ceyhanmolla.com)
-
-1. **Enable GitHub Pages**: Settings → Pages → Source: `main` branch / root folder
-2. **Configure DNS** at your domain registrar:
-
-| Type | Host | Value |
-|------|------|-------|
-| A | @ | 185.199.108.153 |
-| A | @ | 185.199.109.153 |
-| A | @ | 185.199.110.153 |
-| A | @ | 185.199.111.153 |
-| CNAME | www | ceyhanmolla.github.io |
-
-3. **Add custom domain** in GitHub Pages settings: `www.ceyhanmolla.com`
-4. **Enforce HTTPS** (GitHub provides free SSL via Let's Encrypt)
-
-DNS propagation can take 5-30 minutes (up to 48 hours). After propagation, the site will be available at `https://www.ceyhanmolla.com`
-
-## ♿ Accessibility Features
-
-- ✅ **Skip to main content** link for keyboard users
-- ✅ **Semantic HTML**: proper heading hierarchy (h1, h2, h3, etc.)
-- ✅ **ARIA labels** and roles for interactive components
-- ✅ **Keyboard navigation** support for all interactive elements
-- ✅ **Focus management** for modal navigation
-- ✅ **Reduced motion** support (`prefers-reduced-motion`)
-- ✅ **Color contrast** meets WCAG guidelines
-- ✅ **Touch-friendly** target sizes (44px minimum)
-
-## 📱 Browser Support
-
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-Uses modern CSS features with graceful degradation:
-- `backdrop-filter` (Chrome 76+, Safari 9+, Firefox 103+)
-- CSS Grid and Flexbox
-- CSS Custom Properties
-- IntersectionObserver API
-- WebP image format (with fallbacks if needed)
-
-## 🔒 Security & Performance
-
-- **Content Security Policy** headers defined
-- **Strict referrer policy** for privacy
-- **Preload hints** for critical resources (hero image)
-- **DNS prefetch** for external domains (LinkedIn, YouTube, etc.)
-- **Lazy loading** for non-critical images
-- **Optimized images**: WebP format with appropriate compression
-- **Minimal JavaScript**: Vanilla JS, no heavy frameworks
-- **No external dependencies**: Except Google Fonts
-
-## 📝 Content Sections
-
-1. **Hero**: Full-viewport intro with bold typography
-2. **About**: Revealing text animation on scroll
-3. **Statistics**: Animated counters with particle background
-4. **Skills**: Three categories with expandable accordion items
-   - IT Infrastructure & Deployment
-   - Automation & System Integration
-   - IT Security & Data Analysis
-5. **Contact**: Footer with social links and email
-
-## 📄 License
-
-All rights reserved. © 2026 Ceyhan Molla.
+**Use when:** Building premium interfaces, modern SaaS dashboards, or any project requiring high-end, non-generic design.
 
 ---
 
-**Live Site**: https://www.ceyhanmolla.com (after DNS propagation)  
-**GitHub**: https://github.com/ceyhanmolla/ceyhanmolla.com
+### 2. Security Audit
+
+**Skill name:** `security-audit`
+
+**Description:** Security audit and vulnerability assessment skill for code review. Use when performing security audits, identifying vulnerabilities, checking for hardcoded secrets, reviewing authentication/authorization logic, analyzing dependency vulnerabilities, or providing security hardening recommendations. Covers OWASP Top 10, secret detection, credential auditing, and security best practices.
+
+**Key Capabilities:**
+- Systematic vulnerability documentation with exploit scenarios
+- Severity classification (Critical, High, Medium, Low)
+- Secret & credential audit (API keys, database credentials, encryption keys)
+- Security hardening checklist (rate limiting, CSP, CORS, HTTPS, etc.)
+- Dependency & supply chain vulnerability scanning
+- Coverage of injection vulnerabilities, XSS, CSRF, broken authentication/authorization
+- Common vulnerability pattern examples with secure fixes
+
+**Use when:** Performing security code reviews, assessing application security posture, or needing security hardening guidance.
+
+---
+
+### 3. Web Page Design
+
+**Skill name:** `web-page-design`
+
+**Description:** A comprehensive skill for creating modern, high-performance web pages with video backgrounds, glassmorphic effects, and cinematic animations.
+
+**Key Capabilities:**
+- Video background system with seamless fade loops and HLS streaming (`hls.js`)
+- Liquid Glass CSS implementation (backdrop-blur with inner border refraction)
+- HSL-based color theming system
+- Animation patterns (GSAP for scrolltelling, Framer Motion for UI)
+- Component blueprints: Navbar, Hero, CardGrid, Marquee, etc.
+- Performance optimization (video playback, animation best practices)
+- Responsive design patterns and typography scales
+- Project structure guidelines (React + TypeScript + Vite + Tailwind CSS v4)
+
+**Use when:** Building modern landing pages, portfolios, or marketing sites with cinematic visual effects.
+
+## Installation & Usage
+
+These skills are designed for use with **OpenCode**. To install:
+
+1. Place each skill directory in your OpenCode skills folder:
+   ```
+   ~/.config/opencode/skills/
+   ```
+
+2. Restart OpenCode or reload skills.
+
+3. Skills will activate automatically based on your task description. You can also explicitly request a skill: "Use the [skill-name] skill to help me..."
+
+Each skill's full specification is contained in its `SKILL.md` file.
+
+## Repository Structure
+
+This repository contains:
+- `README.md` - This documentation file
+- (Skill implementation files are located in `~/.config/opencode/skills/`)
+
+## License
+
+MIT. Use freely.
