@@ -111,27 +111,36 @@
             revealText.innerHTML = textContent.split(' ').map(word => `<span>${word}</span>`).join(' ');
             const words = revealText.querySelectorAll('span');
 
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (!entry.isIntersecting) return;
-                    
-                    const rect = entry.boundingClientRect;
-                    const windowHeight = window.innerHeight;
-                    
-                    const start = windowHeight * 0.8;
-                    const end = windowHeight * 0.2;
-                    let progress = (start - rect.top) / (start - end);
-                    progress = Math.max(0, Math.min(1, progress));
-                    
-                    const activeCount = Math.floor(progress * words.length);
-                    
-                    words.forEach((word, index) => {
-                        word.classList.toggle('active', index < activeCount);
-                    });
-                });
-            }, { threshold: CONFIG.THRESHOLD.TEXT_REVEAL });
+            let ticking = false;
 
-            const init = () => observer.observe(revealText);
+            const update = () => {
+                const rect = revealText.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                
+                const start = windowHeight * 0.8;
+                const end = windowHeight * 0.2;
+                let progress = (start - rect.top) / (start - end);
+                progress = Math.max(0, Math.min(1, progress));
+                
+                const activeCount = Math.floor(progress * words.length);
+                
+                words.forEach((word, index) => {
+                    word.classList.toggle('active', index < activeCount);
+                });
+                
+                ticking = false;
+            };
+
+            const requestTick = () => {
+                if (ticking) return;
+                requestAnimationFrame(update);
+                ticking = true;
+            };
+
+            const init = () => {
+                window.addEventListener('scroll', requestTick, { passive: true });
+                update(); // Initial check
+            };
 
             return { init };
         })();
