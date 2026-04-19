@@ -1,90 +1,70 @@
-# opencode-skills
+# OpenCode Skills
 
-A collection of custom OpenCode skills for advanced development workflows.
+Premium OpenCode skill'leri - direct copy-paste ready kod örnekleri ve referans rehberleri.
 
-This repository serves as documentation for a set of powerful OpenCode skills that enhance the AI coding assistant's capabilities. These skills provide specialized guidance for frontend design, security auditing, and web page development.
+## Quick Start
 
-## Skills Overview
+```bash
+# Skill'i yükle
+skill({ name: "skill-name" })
+```
 
-### 1. Design Taste Frontend
+## Mevcut Skilller
 
-**Skill name:** `design-taste-frontend`
+### hero-sections
+Premium landing page bölümleri için kapsamlı referans. Video backgrounds, glassmorphism, typography, animations ve tüm sayfa bölümleri (Features, Testimonials, Stats, Pricing, CTA, Footer) dahil.
 
-**Description:** Senior UI/UX Engineer. Architect digital interfaces overriding default LLM biases. Enforces metric-based rules, strict component architecture, CSS hardware acceleration, and balanced design engineering.
+**Alt dosyalar:**
+- `SKILL.md` - Ana referans + page structure
+- `video-patterns.md` - Video entegrasyonları
+- `liquid-glass.md` - Glassmorphism CSS
+- `typography-patterns.md` - Font sistemleri
+- `animation-patterns.md` - Animasyonlar
+- `features-sections.md` - Features bölümleri
+- `testimonials.md` - Testimonial bölümleri
+- `stats-metrics.md` - İstatistik bölümleri
+- `pricing.md` - Fiyatlandırma bölümleri
+- `cta-footer.md` - CTA ve Footer
 
-**Key Capabilities:**
-- Configurable design dials (DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY)
-- Deterministic typography with premium font stacks (Geist, Outfit, Cabinet Grotesk, Satoshi)
-- Color calibration limiting to 1 accent color (<80% saturation)
-- Advanced motion patterns (magnetic buttons, staggering, layout transitions)
-- Perpetual micro-interactions using Framer Motion
-- Liquid Glass refraction effect for premium UI
-- Bento 2.0 architecture with 5 specific card archetypes
-- Strict performance guardrails (hardware acceleration, z-index restraint)
-- Anti-slop patterns to avoid generic AI designs
+**Kullanım:**
+```tsx
+import { skill } from 'opencode';
+skill({ name: "hero-sections" })
+```
 
-**Use when:** Building premium interfaces, modern SaaS dashboards, or any project requiring high-end, non-generic design.
+### design-taste-frontend
+Senior UI/UX Engineering - Metrik bazlı tasarım kuralları, anti-slop kalıpları, Bento 2.0 spec. DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY metrikleri ile premium frontend.
 
----
+**Kullanım:**
+```tsx
+skill({ name: "design-taste-frontend" })
+```
 
-### 2. Security Audit
+### web-page-design
+Premium landing pages için video backgrounds, glassmorphic effects, cinematic animations rehberi. React + Vite + Tailwind + Framer Motion.
 
-**Skill name:** `security-audit`
+**Kullanım:**
+```tsx
+skill({ name: "web-page-design" })
+```
 
-**Description:** Security audit and vulnerability assessment skill for code review. Use when performing security audits, identifying vulnerabilities, checking for hardcoded secrets, reviewing authentication/authorization logic, analyzing dependency vulnerabilities, or providing security hardening recommendations. Covers OWASP Top 10, secret detection, credential auditing, and security best practices.
+## Teknolojiler
 
-**Key Capabilities:**
-- Systematic vulnerability documentation with exploit scenarios
-- Severity classification (Critical, High, Medium, Low)
-- Secret & credential audit (API keys, database credentials, encryption keys)
-- Security hardening checklist (rate limiting, CSP, CORS, HTTPS, etc.)
-- Dependency & supply chain vulnerability scanning
-- Coverage of injection vulnerabilities, XSS, CSRF, broken authentication/authorization
-- Common vulnerability pattern examples with secure fixes
+- React 18+ / Next.js
+- Tailwind CSS v3/v4
+- TypeScript
+- Framer Motion
+- GSAP (opsiyonel)
+- hls.js (video streaming)
 
-**Use when:** Performing security code reviews, assessing application security posture, or needing security hardening guidance.
+## Katkıda Bulunma
 
----
+1. Fork repo
+2. Yeni branch oluştur: `git checkout -b skill-name`
+3. Değişiklikleri commit et: `git commit -m 'Add: new skill'`
+4. Push et: `git push origin skill-name`
+5. Pull request aç
 
-### 3. Web Page Design
+## Lisans
 
-**Skill name:** `web-page-design`
-
-**Description:** A comprehensive skill for creating modern, high-performance web pages with video backgrounds, glassmorphic effects, and cinematic animations.
-
-**Key Capabilities:**
-- Video background system with seamless fade loops and HLS streaming (`hls.js`)
-- Liquid Glass CSS implementation (backdrop-blur with inner border refraction)
-- HSL-based color theming system
-- Animation patterns (GSAP for scrolltelling, Framer Motion for UI)
-- Component blueprints: Navbar, Hero, CardGrid, Marquee, etc.
-- Performance optimization (video playback, animation best practices)
-- Responsive design patterns and typography scales
-- Project structure guidelines (React + TypeScript + Vite + Tailwind CSS v4)
-
-**Use when:** Building modern landing pages, portfolios, or marketing sites with cinematic visual effects.
-
-## Installation & Usage
-
-These skills are designed for use with **OpenCode**. To install:
-
-1. Place each skill directory in your OpenCode skills folder:
-   ```
-   ~/.config/opencode/skills/
-   ```
-
-2. Restart OpenCode or reload skills.
-
-3. Skills will activate automatically based on your task description. You can also explicitly request a skill: "Use the [skill-name] skill to help me..."
-
-Each skill's full specification is contained in its `SKILL.md` file.
-
-## Repository Structure
-
-This repository contains:
-- `README.md` - This documentation file
-- (Skill implementation files are located in `~/.config/opencode/skills/`)
-
-## License
-
-MIT. Use freely.
+MIT License
