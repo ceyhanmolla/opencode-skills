@@ -12,6 +12,7 @@ skill({ name: "skill-name" })
 ## Mevcut Skilller
 
 ### hero-sections
+
 Premium landing page bölümleri için kapsamlı referans. Video backgrounds, glassmorphism, typography, animations ve tüm sayfa bölümleri (Features, Testimonials, Stats, Pricing, CTA, Footer) dahil.
 
 **Alt dosyalar:**
@@ -32,20 +33,13 @@ import { skill } from 'opencode';
 skill({ name: "hero-sections" })
 ```
 
-### design-taste-frontend
-Senior UI/UX Engineering - Metrik bazlı tasarım kuralları, anti-slop kalıpları, Bento 2.0 spec. DESIGN_VARIANCE, MOTION_INTENSITY, VISUAL_DENSITY metrikleri ile premium frontend.
+### aura-asset-images
+
+High-quality Unsplash-style görseller için Aura Asset Library entegrasyonu.
 
 **Kullanım:**
 ```tsx
-skill({ name: "design-taste-frontend" })
-```
-
-### web-page-design
-Premium landing pages için video backgrounds, glassmorphic effects, cinematic animations rehberi. React + Vite + Tailwind + Framer Motion.
-
-**Kullanım:**
-```tsx
-skill({ name: "web-page-design" })
+skill({ name: "aura-asset-images" })
 ```
 
 ## Teknolojiler
