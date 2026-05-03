@@ -10,6 +10,25 @@ skill({ name: "skill-name" })
 
 ## Available Skills
 
+### freqtrade
+
+Cryptocurrency trading bot documentation. Comprehensive reference for the Freqtrade open-source Python trading bot with backtesting, hyperopt optimization, and strategy development.
+
+**Files:**
+- `SKILL.md` - Main reference with overview and links
+- `reference/` - 38 reference documents covering:
+  - Bot Basics, Strategy Development, Configuration
+  - Backtesting, Hyperopt, Advanced Testing
+  - Telegram, REST API, WebUI
+  -Stoploss, Leverage, Plugins
+  - Data Download, Analysis, Plotting
+  - And more...
+
+**Usage:**
+```bash
+skill({ name: "freqtrade" })
+```
+
 ### aura-design-systems
 
 Automatically selects the best-matching design from 160+ reference design files. Analyzes project brief, presents options, and extracts complete design tokens (colors, typography, spacing, radius).
@@ -28,18 +47,6 @@ skill({ name: "aura-design-systems" })
 ### hero-sections
 
 Premium landing page sections with video backgrounds, glassmorphism, typography patterns, and animations. Includes Features, Testimonials, Stats, Pricing, CTA, and Footer sections.
-
-**Files:**
-- `SKILL.md` - Main reference + page structure
-- `video-patterns.md` - Video integrations
-- `liquid-glass.md` - Glassmorphism CSS
-- `typography-patterns.md` - Font systems
-- `animation-patterns.md` - Animations
-- `features-sections.md` - Feature sections
-- `testimonials.md` - Testimonial sections
-- `stats-metrics.md` - Statistics sections
-- `pricing.md` - Pricing sections
-- `cta-footer.md` - CTA and Footer
 
 **Usage:**
 ```tsx
